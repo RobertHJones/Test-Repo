@@ -19,11 +19,23 @@ array.map(numberCubed)
 let people = ['Rob', 'Bob', 'Bobby', 'Robbie', 'Robert', 'Bert', 'Bertie', 'Roberto']
 
 function addJones(name) {
+    if (name.charAt(0) === 'R') {
     return `${name} Jonesy`
+} else {
+    return `${name} Who?`
 }
+}
+
 people.map(addJones)
 
  findTotal = (total, num) =>
     total + num;
 
 array.reduce(findTotal)
+
+function isGreaterThanTwelve(num) {
+return num > 12
+}
+
+array.findIndex(isGreaterThanTwelve)
+array.find(isGreaterThanTwelve)
